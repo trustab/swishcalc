@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/swishcalc/static/css/main.e6c13ad2.css",
+    "main.js": "/swishcalc/static/js/main.736f3537.js",
+    "static/js/787.1e27f299.chunk.js": "/swishcalc/static/js/787.1e27f299.chunk.js",
+    "index.html": "/swishcalc/index.html",
+    "main.e6c13ad2.css.map": "/swishcalc/static/css/main.e6c13ad2.css.map",
+    "main.736f3537.js.map": "/swishcalc/static/js/main.736f3537.js.map",
+    "787.1e27f299.chunk.js.map": "/swishcalc/static/js/787.1e27f299.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.736f3537.js"
+  ]
+}
