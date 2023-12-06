@@ -30,8 +30,8 @@ const CalcScreen: React.FC = () => {
   return (
     <Observer>
       {() => (
-        <Stack gap={2} style={{  maxHeight:'100%' }}>
-          <List style={{overflowY:'scroll'}} >
+        <Stack gap={2} style={{  height:'100%' }}>
+          <List style={{overflowY:'auto'}} >
             {settingsStore.cartItems.map((item: CartItem) => (
               <div
                 key={item.id}

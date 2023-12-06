@@ -103,7 +103,7 @@ const SettingScreen: React.FC = () => {
     <Observer>
       {() => (
 
-<Stack gap={2} style={{  maxHeight:'100%' }}>
+<Stack gap={2} style={{  height:'100%', placeItems:'stretch' }}>
     <TextField
             label="Telefonnummer"
             value={settingsStore.phoneNumber}
@@ -112,7 +112,7 @@ const SettingScreen: React.FC = () => {
             label="Meddelande"
             value={settingsStore.message}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => settingsStore.setMessage(e.target.value)} />
-       <List style={{overflowY:'scroll'}} >
+       <List style={{overflowY:'auto'}} >
                  {settingsStore.cartItems.map((item: CartItem) => (
                 <div 
                 key={item.id}
