@@ -103,8 +103,8 @@ const SettingScreen: React.FC = () => {
     <Observer>
       {() => (
 
-        <Stack gap={2} style={{  marginBottom: 200 }}>
-          <TextField
+<Stack gap={2} style={{  maxHeight:'100%' }}>
+    <TextField
             label="Telefonnummer"
             value={settingsStore.phoneNumber}
             onChange={(e:React.ChangeEvent<HTMLInputElement>) => settingsStore.setPhoneNumber(e.target.value)} />
@@ -112,8 +112,8 @@ const SettingScreen: React.FC = () => {
             label="Meddelande"
             value={settingsStore.message}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => settingsStore.setMessage(e.target.value)} />
-            <List>
-              {settingsStore.cartItems.map((item: CartItem) => (
+       <List style={{overflowY:'scroll'}} >
+                 {settingsStore.cartItems.map((item: CartItem) => (
                 <div 
                 key={item.id}
                 >
@@ -146,13 +146,21 @@ const SettingScreen: React.FC = () => {
             onReordered={onReordered}
             renderItem={renderItem}
           /> */}
-          <Button
+          
+          <Button color='inherit'
             variant="contained"
             
             onClick={() => {
               showAddItemModal();
             }}
           >Lägg till vara</Button>
+          <Button color='inherit'
+            variant="contained"
+            onClick={() => {
+              settingsStore.setCartItems([]);
+            }}
+          >Rensa</Button>
+            
             <Dialog open={settingsStore.addItemModalVisible} onClose={() => settingsStore.setAddItemModalVisible(false)}>
               <DialogTitle>Lägg till vara</DialogTitle>
               <DialogContent>
@@ -177,9 +185,9 @@ const SettingScreen: React.FC = () => {
                 </Stack>
               </DialogContent>
               <DialogActions>
-                <Button onClick={() => settingsStore.setAddItemModalVisible(false)}>Stäng</Button>
-                <Button onClick={() => { addItem() }}>Spara</Button>
-                <Button onClick={() => { addItem(true) }}>Spara & lägg till ny</Button>
+                <Button color='inherit' onClick={() => settingsStore.setAddItemModalVisible(false)}>Stäng</Button>
+                <Button color='inherit' onClick={() => { addItem() }}>Spara</Button>
+                <Button color='inherit' onClick={() => { addItem(true) }}>Spara & lägg till ny</Button>
               </DialogActions>
             </Dialog>
         </Stack>

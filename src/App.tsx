@@ -10,7 +10,7 @@ import { Typography } from '@mui/material';
 export default function App() {
   const darkTheme = createTheme({
     palette: {
-      mode: 'light',
+      mode: 'dark',
     },
   });
   

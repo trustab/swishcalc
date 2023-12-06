@@ -19,13 +19,13 @@ const Main: React.FC = () => {
   return (
     <Observer>
       {() => (
-        <Container maxWidth="sm"  style={{height:"100vh", flex:1, justifyContent:"stretch"}} >
-          <Stack height={"100vh"} sx={{pt:2, pb:2}} flex={1} justifySelf={"stretch"} spacing={2} direction="column" justifyContent={"space-between"} >
+        <Container maxWidth="sm"  style={{height:"100vh", flex:1}} >
+          <Stack height={"100vh"} sx={{pt:2, pb:7}} flex={1} spacing={2} direction="column" justifyContent={"space-between"} >
 
         {value === 0 ? <CalcScreen /> : <SettingScreen />}
         
         <BottomNavigation
-          sx={{ width: '100%', position: 'fixed', bottom: 0 }}
+          sx={{ width: '100%', position: 'fixed', bottom: 0, left: 0 }}
           showLabels
           value={value}
           onChange={(_, newValue) => {
