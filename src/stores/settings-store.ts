@@ -154,7 +154,7 @@ export class SettingsStore {
       //   console.log(error);
       // });
 
-      const response = await fetch('https://swish-proxy-7sjkadiwka-lz.a.run.app/', {
+      const response = await fetch('https://mpc.getswish.net/qrg-swish/api/v1/prefilled', {
         method: 'POST',
         
         headers: {
