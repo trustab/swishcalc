@@ -41,8 +41,9 @@ const CalcScreen: React.FC = () => {
 
                   secondaryAction={
                     <Stack direction="row" spacing={2}>
-                      <Button color='inherit'
-                      variant="contained"
+                      <Button 
+                      // color='inherit'
+                      variant="outlined"
                       size='small'
                       style={{width:30, height:30, padding:4, minWidth:0, borderRadius:15}}
                       onClick={() => { settingsStore.removeQuantity(item.id) }}
@@ -50,8 +51,9 @@ const CalcScreen: React.FC = () => {
                         <RemoveIcon />
                       </Button>
                       <Typography variant='h5' >{item.quantity}</Typography>
-                      <Button color='inherit'
-                      variant="contained"
+                      <Button 
+                      // color='inherit'
+                      variant="outlined"
                         style={{width:30, height:30, padding:4, minWidth:0, borderRadius:15}}
                         onClick={() => { settingsStore.addQuantity(item.id) }}
                       >
