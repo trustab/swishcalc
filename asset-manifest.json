@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/swishcalc/static/css/main.e6c13ad2.css",
-    "main.js": "/swishcalc/static/js/main.80f9d596.js",
+    "main.js": "/swishcalc/static/js/main.405d051f.js",
     "static/js/787.1e27f299.chunk.js": "/swishcalc/static/js/787.1e27f299.chunk.js",
     "index.html": "/swishcalc/index.html",
     "main.e6c13ad2.css.map": "/swishcalc/static/css/main.e6c13ad2.css.map",
-    "main.80f9d596.js.map": "/swishcalc/static/js/main.80f9d596.js.map",
+    "main.405d051f.js.map": "/swishcalc/static/js/main.405d051f.js.map",
     "787.1e27f299.chunk.js.map": "/swishcalc/static/js/787.1e27f299.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.80f9d596.js"
+    "static/js/main.405d051f.js"
   ]
 }
